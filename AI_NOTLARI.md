@@ -1,0 +1,1 @@
+1 Kod eklemeden önce dosyalarım boştu ve başlangıç commit'inin oluşturdum.
