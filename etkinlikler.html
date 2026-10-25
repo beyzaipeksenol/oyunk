@@ -18,6 +18,76 @@
 			</div>
 		</nav>
 	</header>
-	<main class="container"></main>
+
+	<main class="container">
+		<section class="section" aria-labelledby="events-heading">
+			<div class="section-heading">
+				<p class="eyebrow">GG Campus buluşmaları</p>
+				<h1 id="events-heading">Etkinlikler</h1>
+				<p>Bir sonraki oyun geceni bul, ekibini kur ve bize katıl.</p>
+			</div>
+
+			<div class="search-panel">
+				<div class="search-field">
+					<label for="event-search">Etkinlik başlığına göre ara</label>
+					<input
+						type="search"
+						id="event-search"
+						aria-describedby="event-search-hint"
+						placeholder="Örn. Valorant Kampüs Turnuvası"
+					>
+				</div>
+				<button class="button button-secondary" id="clear-search" type="button">Temizle</button>
+			</div>
+			<p class="muted" id="event-search-hint">Arama yalnızca etkinlik başlıklarında yapılır.</p>
+			<p class="search-status" id="event-count" aria-live="polite" aria-atomic="true">6 etkinlik listeleniyor.</p>
+
+			<p class="search-status" id="no-events-message" role="status" hidden>
+				Aramanla eşleşen etkinlik bulunamadı.
+			</p>
+
+			<div class="card-grid" id="event-list">
+				<article class="card event-card">
+					<span class="card-tag">Turnuva</span>
+					<h2>Valorant Kampüs Turnuvası</h2>
+					<p class="muted">Tarih: <time datetime="2026-11-07">7 Kasım 2026</time></p>
+					<p>Kampüsten oyuncularla takımını kur, rekabet dolu maçlarda becerini göster.</p>
+				</article>
+				<article class="card event-card">
+					<span class="card-tag">Yaratıcılık</span>
+					<h2>Minecraft İnşa Gecesi</h2>
+					<p class="muted">Tarih: <time datetime="2026-11-11">11 Kasım 2026</time></p>
+					<p>Birlikte yeni yapılar tasarla, fikirlerini paylaş ve ortak dünyamıza katıl.</p>
+				</article>
+				<article class="card event-card">
+					<span class="card-tag">Sosyalleşme</span>
+					<h2>Cozy Games Akşamı</h2>
+					<p class="muted">Tarih: <time datetime="2026-11-14">14 Kasım 2026</time></p>
+					<p>Rahat oyunlar ve keyifli sohbet eşliğinde ders temposuna kısa bir mola ver.</p>
+				</article>
+				<article class="card event-card">
+					<span class="card-tag">Keşif</span>
+					<h2>Indie Oyunları Keşfediyoruz</h2>
+					<p class="muted">Tarih: <time datetime="2026-11-18">18 Kasım 2026</time></p>
+					<p>Bağımsız geliştiricilerin farklı dünyalarını keşfet ve favorilerini paylaş.</p>
+				</article>
+				<article class="card event-card">
+					<span class="card-tag">Turnuva</span>
+					<h2>EA SPORTS FC Turnuvası</h2>
+					<p class="muted">Tarih: <time datetime="2026-11-21">21 Kasım 2026</time></p>
+					<p>Sahaya çık, arkadaşlarınla karşılaş ve kampüsün futbol heyecanına ortak ol.</p>
+				</article>
+				<article class="card event-card">
+					<span class="card-tag">Atölye</span>
+					<h2>Oyun Geliştirme Fikir Atölyesi</h2>
+					<p class="muted">Tarih: <time datetime="2026-11-25">25 Kasım 2026</time></p>
+					<p>Oyun fikirlerini anlat, birlikte geliştir ve yeni projeler için ekip arkadaşları bul.</p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">© GG Campus</footer>
+	<script src="script.js" defer></script>
 </body>
 </html>
